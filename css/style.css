@@ -774,6 +774,9 @@ address { font-style: normal; }
 .footer-wa-link { color: rgba(255,255,255,0.65); transition: color 0.2s; }
 .footer-wa-link:hover { color: #25D366; }
 .footer-wa-link svg { color: #25D366; }
+.footer-email-link { color: rgba(255,255,255,0.65); transition: color 0.2s; }
+.footer-email-link:hover { color: #fff; }
+.footer-email-link svg { color: var(--sage); }
 .footer-divider {
   border: none;
   border-top: 1px solid rgba(255,255,255,0.10);
