@@ -831,3 +831,205 @@ address { font-style: normal; }
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Getting Started page ─────────────────────────────────────── */
+
+/* Step-by-step list */
+.gs-steps {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.gs-step {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.gs-step-number {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gs-step-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.gs-step-content p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.gs-step-content a { color: var(--green); text-decoration: underline; }
+.gs-step-content a:hover { color: var(--green-dark); }
+
+/* What you need grid */
+.gs-needs-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 0 24px;
+}
+@media (min-width: 600px) {
+  .gs-needs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .gs-needs-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.gs-need-card {
+  background: #fff;
+  border: 1px solid var(--cream-dark);
+  border-radius: 12px;
+  padding: 28px 24px;
+}
+.gs-need-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--green);
+  margin-bottom: 14px;
+}
+.gs-need-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.gs-need-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* Daily routine */
+.gs-routine {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.gs-routine-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--cream-dark);
+}
+.gs-routine-item:last-child { border-bottom: none; }
+.gs-routine-time {
+  flex-shrink: 0;
+  min-width: 100px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green);
+}
+.gs-routine-tasks p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.gs-routine-tasks strong { color: var(--charcoal); }
+
+/* Tips / dos & don'ts grid */
+.gs-tips-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 0 24px;
+}
+@media (min-width: 600px) {
+  .gs-tips-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .gs-tips-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.gs-tip {
+  background: #fff;
+  border: 1px solid var(--cream-dark);
+  border-radius: 12px;
+  padding: 24px;
+}
+.gs-tip-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+.gs-tip-icon--good { color: var(--green); }
+.gs-tip-icon--warn { color: var(--brown); }
+.gs-tip h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.gs-tip p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* FAQ accordion */
+.gs-faq {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.gs-faq-item {
+  border-bottom: 1px solid var(--cream-dark);
+}
+.gs-faq-item summary {
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.gs-faq-item summary::-webkit-details-marker { display: none; }
+.gs-faq-item summary::after {
+  content: '';
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A7C59' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.25s;
+}
+.gs-faq-item[open] summary::after {
+  transform: rotate(180deg);
+}
+.gs-faq-item p {
+  padding: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.gs-faq-item p a { color: var(--green); text-decoration: underline; }
+.gs-faq-item p a:hover { color: var(--green-dark); }
