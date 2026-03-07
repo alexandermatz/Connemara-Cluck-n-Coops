@@ -433,35 +433,35 @@ address { font-style: normal; }
 
 .review-card {
   background: #fff;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid var(--cream-dark);
-  padding: 28px 28px 24px;
+  padding: 16px 18px 14px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   transition: box-shadow 0.4s, transform 0.3s;
 }
 .review-card:hover {
-  box-shadow: 0 12px 40px rgba(0,0,0,0.09);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+  transform: translateX(4px);
 }
 
 .review-stars {
   display: flex;
-  gap: 3px;
+  gap: 2px;
   color: #E6A817;
 }
 .review-stars svg {
-  width: 17px;
-  height: 17px;
+  width: 13px;
+  height: 13px;
   flex-shrink: 0;
 }
 
 .review-text {
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   color: var(--muted);
-  line-height: 1.75;
+  line-height: 1.6;
   flex: 1;
 }
 
@@ -469,17 +469,17 @@ address { font-style: normal; }
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding-top: 16px;
+  padding-top: 10px;
   border-top: 1px solid var(--cream-dark);
 }
 .review-name {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--charcoal);
 }
 .review-location {
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: var(--green);
   letter-spacing: 0.05em;
