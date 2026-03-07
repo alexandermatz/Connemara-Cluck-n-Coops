@@ -1,0 +1,73 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Small solid-timber chicken coop with metal roof and wooden ramp">
+  <!-- Sky -->
+  <rect width="480" height="300" fill="#c4dbe8"/>
+  <!-- Ground -->
+  <rect x="0" y="246" width="480" height="54" fill="#6a8f47"/>
+  <rect x="0" y="242" width="480" height="7" fill="#7ea854"/>
+  <!-- Shadow -->
+  <ellipse cx="240" cy="249" rx="110" ry="5" fill="rgba(0,0,0,0.16)"/>
+
+  <!-- Back legs -->
+  <rect x="164" y="200" width="12" height="48" fill="#4a2c0c" rx="2"/>
+  <rect x="310" y="200" width="12" height="48" fill="#4a2c0c" rx="2"/>
+  <!-- Front legs -->
+  <rect x="148" y="198" width="15" height="50" fill="#6b3f16" rx="2"/>
+  <rect x="323" y="198" width="15" height="50" fill="#6b3f16" rx="2"/>
+
+  <!-- Body walls -->
+  <rect x="142" y="100" width="202" height="100" fill="#c27e28" rx="3"/>
+  <!-- Plank lines -->
+  <line x1="142" y1="115" x2="344" y2="115" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="142" y1="129" x2="344" y2="129" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="142" y1="143" x2="344" y2="143" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="142" y1="157" x2="344" y2="157" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="142" y1="171" x2="344" y2="171" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="142" y1="186" x2="344" y2="186" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Gable (front peak triangle) -->
+  <polygon points="243,46 142,100 344,100" fill="#c27e28"/>
+  <!-- Gable plank lines -->
+  <line x1="180" y1="88" x2="308" y2="88" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="200" y1="75" x2="287" y2="75" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="220" y1="62" x2="268" y2="62" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Roof left slope -->
+  <polygon points="243,32 122,102 142,102" fill="#2c2b2b"/>
+  <line x1="186" y1="80" x2="126" y2="100" stroke="#484848" stroke-width="3" opacity="0.4"/>
+  <line x1="208" y1="67" x2="124" y2="100" stroke="#484848" stroke-width="3" opacity="0.35"/>
+  <line x1="230" y1="53" x2="122" y2="102" stroke="#484848" stroke-width="3" opacity="0.3"/>
+  <!-- Roof right slope -->
+  <polygon points="243,32 362,102 344,102" fill="#262525"/>
+  <line x1="278" y1="70" x2="358" y2="100" stroke="#404040" stroke-width="3" opacity="0.35"/>
+  <line x1="308" y1="56" x2="361" y2="100" stroke="#404040" stroke-width="3" opacity="0.3"/>
+  <!-- Ridge cap -->
+  <line x1="120" y1="103" x2="243" y2="32" stroke="#1c1b1b" stroke-width="3.5"/>
+  <line x1="243" y1="32" x2="364" y2="103" stroke="#1c1b1b" stroke-width="3.5"/>
+
+  <!-- Arched door -->
+  <path d="M 270,198 L 270,148 Q 270,132 284,132 Q 298,132 298,148 L 298,198 Z" fill="#5c3210"/>
+  <path d="M 272,197 L 272,150 Q 272,136 284,136 Q 296,136 296,150 L 296,197" fill="none" stroke="#3d2008" stroke-width="1.5" opacity="0.7"/>
+  <!-- Hinges -->
+  <rect x="266" y="147" width="11" height="7" fill="#111" rx="1.5"/>
+  <circle cx="275" cy="150" r="2" fill="#2a2a2a"/>
+  <rect x="266" y="174" width="11" height="7" fill="#111" rx="1.5"/>
+  <circle cx="275" cy="177" r="2" fill="#2a2a2a"/>
+  <rect x="266" y="188" width="11" height="7" fill="#111" rx="1.5"/>
+  <!-- Bolt latch -->
+  <rect x="298" y="163" width="10" height="5" fill="#111" rx="1"/>
+
+  <!-- Ramp -->
+  <polygon points="268,198 300,198 322,248 246,248" fill="#8b5218"/>
+  <!-- Ramp cleats -->
+  <line x1="251" y1="239" x2="319" y2="233" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="254" y1="226" x2="317" y2="221" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="258" y1="213" x2="312" y2="209" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="262" y1="201" x2="301" y2="199" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Vent window left -->
+  <rect x="160" y="116" width="56" height="26" fill="#5c3210" rx="3"/>
+  <line x1="160" y1="126" x2="216" y2="126" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="160" y1="134" x2="216" y2="134" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="178" y1="116" x2="178" y2="142" stroke="#3d2008" stroke-width="1" opacity="0.5"/>
+  <line x1="196" y1="116" x2="196" y2="142" stroke="#3d2008" stroke-width="1" opacity="0.5"/>
+</svg>
