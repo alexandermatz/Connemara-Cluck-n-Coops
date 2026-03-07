@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breed Library – Connemara Clucking Coops</title>
+  <meta name="description" content="Discover our carefully selected heritage breeds — each chosen for their temperament, egg quality, and ability to thrive in the West of Ireland." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">Connemara <em>Clucking</em> Coops</a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="breeds.html" aria-current="page">Breeds</a>
+      <a href="coops.html">Coops</a>
+    </nav>
+
+    <a href="https://wa.me/353000000000?text=Hi!%20I%20have%20a%20question%20about%20your%20chickens%20and%20coops."
+       target="_blank" rel="noopener noreferrer" class="nav-wa-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      Contact Me
+    </a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+        <line x1="0" y1="1"  x2="22" y2="1"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="8"  x2="22" y2="8"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <nav class="nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+      <button class="nav-close" id="nav-close" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <line x1="1" y1="1" x2="17" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="17" y1="1" x2="1"  y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a href="index.html">Home</a>
+      <a href="breeds.html">Breeds</a>
+      <a href="coops.html">Coops</a>
+      <a href="https://wa.me/353000000000?text=Hi!%20I%20have%20a%20question%20about%20your%20chickens%20and%20coops."
+         target="_blank" rel="noopener noreferrer" class="drawer-wa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:17px;height:17px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Contact Me
+      </a>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="reveal">
+      <p class="section-eyebrow">Our Flock</p>
+      <h1 class="section-heading" style="font-size:clamp(2.4rem,6vw,3.8rem)">The Breed Library</h1>
+      <p class="section-body" style="margin-bottom:0">Discover our carefully selected heritage breeds — each chosen for their temperament, egg quality, and ability to thrive in the West of Ireland.</p>
+    </div>
+  </section>
+
+  <!-- BREEDS GRID -->
+  <div class="breeds-grid">
+
+    <!-- Rhode Islands -->
+    <article class="breed-card reveal">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/2b54432c7_generated_image.png"
+             alt="Rhode Islands" loading="lazy" />
+        <span class="egg-badge" style="background:#8B6914">Brown Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Rhode Islands</h2>
+        <p class="breed-card-desc">The quintessential backyard hen. Rhode Island Reds are dependable, hardy layers that thrive in the Irish climate and produce beautiful brown eggs year-round.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>250–300/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Friendly</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Very Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Blue Bells -->
+    <article class="breed-card reveal" style="transition-delay:0.08s">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/b89d7d95a_generated_image.png"
+             alt="Blue Bells" loading="lazy" />
+        <span class="egg-badge" style="background:#A0845C">Light Brown</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Blue Bells</h2>
+        <p class="breed-card-desc">Stunning blue-grey plumage and a gentle nature make Blue Bells a favourite for families. They're excellent layers of large, light brown eggs.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>260–280/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Gentle</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- White Leghorns -->
+    <article class="breed-card reveal" style="transition-delay:0.16s">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/4bd16d56c_generated_image.png"
+             alt="White Leghorns" loading="lazy" />
+        <span class="egg-badge" style="background:#ccc;color:#666">White Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">White Leghorns</h2>
+        <p class="breed-card-desc">The champion egg layers. White Leghorns are active, alert birds that produce an impressive number of large white eggs. Perfect for those who want maximum output.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>280–320/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Active</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Marans -->
+    <article class="breed-card reveal">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/1fc05b378_generated_image.png"
+             alt="Marans" loading="lazy" />
+        <span class="egg-badge" style="background:#5C3A1E">Chocolate Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Marans</h2>
+        <p class="breed-card-desc">Famous for their deep chocolate-brown eggs, Marans are beautiful, docile birds. A must-have for anyone who appreciates truly unique eggs.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>150–200/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Docile</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Black Rocks -->
+    <article class="breed-card reveal" style="transition-delay:0.08s">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/4a4c80170_generated_image.png"
+             alt="Black Rocks" loading="lazy" />
+        <span class="egg-badge" style="background:#A0724A">Tinted Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Black Rocks</h2>
+        <p class="breed-card-desc">Bred specifically for free-range conditions, Black Rocks are incredibly hardy and reliable. Their glossy black plumage with gold highlights is truly striking.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>280–300/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Bold</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Very Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Easter Eggers -->
+    <article class="breed-card reveal" style="transition-delay:0.16s">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/d1df5f825_generated_image.png"
+             alt="Easter Eggers" loading="lazy" />
+        <span class="egg-badge" style="background:#7CB9A8">Coloured Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Easter Eggers</h2>
+        <p class="breed-card-desc">The showstoppers of any flock! Easter Eggers lay beautiful blue, green, and sometimes pink eggs. Each bird is unique with wonderfully varied plumage.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>200–250/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Curious</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Hardy</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Faverolles -->
+    <article class="breed-card reveal">
+      <div class="breed-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/2c2383a2b_generated_image.png"
+             alt="Faverolles" loading="lazy" />
+        <span class="egg-badge" style="background:#C8A87A;color:#555">Cream Eggs</span>
+      </div>
+      <div class="breed-card-body">
+        <h2 class="breed-card-name">Faverolles</h2>
+        <p class="breed-card-desc">Fluffy, bearded, and utterly charming. Faverolles are the teddy bears of the chicken world — gentle, friendly, and wonderful with children.</p>
+        <div class="breed-stats">
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            <span>180–220/yr</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span>Sweet</span>
+          </div>
+          <div class="breed-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.93 1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <span>Good</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <p class="footer-logo-text">Connemara<br><em>Clucking</em> Coops</p>
+        <p class="footer-tagline">Heritage breeds &amp; handcrafted coops from the heart of the West of Ireland.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breed Library</a>
+        <a href="coops.html">Coop Shop</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--sage)"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Connemara, Co. Galway, Ireland</span>
+        </div>
+        <a href="https://wa.me/353000000000" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-wa-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <p class="footer-copy">&copy; 2025 Connemara Clucking Coops. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
