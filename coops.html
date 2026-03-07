@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop Coops – Connemara Clucking Coops</title>
-  <meta name="description" content="Simple, sturdy chicken coops built from reclaimed pallet wood and stringer frames. Built to order in Connemara." />
+  <title>Coop Shop – Connemara Clucking Coops</title>
+  <meta name="description" content="Handcrafted chicken coops built from reclaimed pallet wood and stringer frames in Connemara. Simple, solid, and built to last." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
-<body class="page-inner">
+<body>
 
-  <!-- NAV -->
-  <header class="navbar navbar-solid" id="navbar">
-    <a href="index.html" class="nav-logo">
-      <span class="nav-logo-bold">Connemara</span>
-      <em class="nav-logo-italic"> Clucking </em>
-      <span class="nav-logo-bold">Coops</span>
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">Connemara <em>Clucking</em> Coops</a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="breeds.html">Breeds</a>
+      <a href="coops.html" aria-current="page">Coops</a>
+    </nav>
+
+    <a href="https://wa.me/353000000000?text=Hi!%20I%20have%20a%20question%20about%20your%20chickens%20and%20coops."
+       target="_blank" rel="noopener noreferrer" class="nav-wa-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      Contact Me
     </a>
+
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
         <line x1="0" y1="1"  x2="22" y2="1"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -26,188 +35,247 @@
         <line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
     </button>
-    <nav class="nav-drawer" id="nav-drawer" aria-hidden="true">
+
+    <nav class="nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
       <button class="nav-close" id="nav-close" aria-label="Close menu">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
           <line x1="1" y1="1" x2="17" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           <line x1="17" y1="1" x2="1"  y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
       </button>
-      <a href="index.html#story">Our Story</a>
+      <a href="index.html">Home</a>
       <a href="breeds.html">Breeds</a>
-      <a href="coops.html">Shop Coops</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="coops.html">Coops</a>
+      <a href="https://wa.me/353000000000?text=Hi!%20I%20have%20a%20question%20about%20your%20chickens%20and%20coops."
+         target="_blank" rel="noopener noreferrer" class="drawer-wa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:17px;height:17px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Contact Me
+      </a>
     </nav>
     <div class="nav-overlay" id="nav-overlay"></div>
   </header>
 
-  <!-- COOPS PAGE -->
-  <main class="inner-page">
-    <div class="coops-page-header">
-      <h1 class="section-title">Custom Built Coops</h1>
-      <p class="section-sub">Every coop is built to order from reclaimed pallet wood and stringer frames — solid, no-nonsense structures built to last. Choose a size below and we'll tailor it to your needs.</p>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="reveal">
+      <p class="section-eyebrow">Handcrafted in Connemara</p>
+      <h1 class="section-heading" style="font-size:clamp(2.4rem,6vw,3.8rem)">Custom Built Coops</h1>
+      <p class="section-body" style="margin-bottom:0">Every coop is built by hand from reclaimed pallet wood and stringer frames — solid, practical, and priced for real farmers. Choose a size below and we'll build it to fit your flock.</p>
     </div>
+  </section>
 
-    <div class="coop-list">
+  <!-- COOPS GRID -->
+  <div class="coops-grid">
 
-      <!-- The Pallet Box -->
-      <article class="coop-card reveal">
-        <div class="coop-photo coop-photo-1">
-          <span class="size-badge">Small</span>
-        </div>
-        <div class="coop-body">
-          <h2>The Pallet Box</h2>
-          <p>A no-frills box coop knocked together from reclaimed pallet boards on a stringer base. Solid, weatherproof, and easy to clean — everything a small flock needs.</p>
-          <div class="coop-stats">
-            <div class="coop-stat">
-              <!-- Ruler icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>3ft &times; 3ft</span>
-            </div>
-            <div class="coop-stat">
-              <!-- Hens icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>2–3 Hens</span>
-            </div>
-            <div class="coop-stat">
-              <!-- Shield icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>Fox-Proof</span>
-            </div>
+    <!-- The Pallet Box (Small) -->
+    <article class="coop-card reveal">
+      <div class="coop-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/1b68f13dd_generated_image.png"
+             alt="The Pallet Box — small coop" loading="lazy" />
+        <span class="coop-size-badge">Small</span>
+      </div>
+      <div class="coop-card-body">
+        <h2 class="coop-card-name">The Pallet Box</h2>
+        <p class="coop-card-desc">A simple, sturdy starter coop built from reclaimed pallet wood on a stringer base. Does the job without the fuss — great for a first flock.</p>
+        <div class="coop-stats">
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2m-5-5 2-2m-2.5 9.5 2-2m5-5 2-2"/></svg>
+            <span>3ft × 3ft</span>
           </div>
-          <ul class="coop-features">
-            <li>Reclaimed pallet board walls and floor</li>
-            <li>Hinged lid for easy egg access</li>
-            <li>Single nesting box with wood shavings</li>
-            <li>Wire mesh ventilation panel</li>
-          </ul>
-          <hr class="coop-divider" />
-          <p class="coop-from">FROM</p>
-          <p class="coop-price">&euro;120</p>
-          <a href="index.html#contact" class="btn btn-green btn-full">Get a Quote</a>
-        </div>
-      </article>
-
-      <!-- The Stringer Run -->
-      <article class="coop-card reveal">
-        <div class="coop-photo coop-photo-2">
-          <span class="size-badge">Medium</span>
-        </div>
-        <div class="coop-body">
-          <h2>The Stringer Run</h2>
-          <p>A raised sleeping box on stringer legs with a wire run built underneath. Gives your hens a sheltered home and an outdoor space in one simple structure.</p>
-          <div class="coop-stats">
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>5ft &times; 3ft</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>4–6 Hens</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>Fox-Proof</span>
-            </div>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>2–3 Hens</span>
           </div>
-          <ul class="coop-features">
-            <li>Raised box on four stringer legs</li>
-            <li>Ramp down to enclosed wire run below</li>
-            <li>Two nesting boxes, easy-access hatch</li>
-            <li>Wire mesh run with bolt-latch door</li>
-          </ul>
-          <hr class="coop-divider" />
-          <p class="coop-from">FROM</p>
-          <p class="coop-price">&euro;220</p>
-          <a href="index.html#contact" class="btn btn-green btn-full">Get a Quote</a>
-        </div>
-      </article>
-
-      <!-- The A-Frame Tractor -->
-      <article class="coop-card reveal">
-        <div class="coop-photo coop-photo-3">
-          <span class="size-badge">Small</span>
-        </div>
-        <div class="coop-body">
-          <h2>The A-Frame Tractor</h2>
-          <p>A lightweight A-frame built on pallet-wood skids. Easy to drag to a fresh patch of grass every few days — great for natural pest control in the garden.</p>
-          <div class="coop-stats">
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>4ft &times; 3ft</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>2–4 Hens</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>Fox-Proof</span>
-            </div>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            <span>Fox-Proof</span>
           </div>
-          <ul class="coop-features">
-            <li>A-frame pallet board construction</li>
-            <li>Timber skid base for easy moving</li>
-            <li>Open-bottom wire floor on grass</li>
-            <li>Small nesting box at one end</li>
-          </ul>
-          <hr class="coop-divider" />
-          <p class="coop-from">FROM</p>
-          <p class="coop-price">&euro;150</p>
-          <a href="index.html#contact" class="btn btn-green btn-full">Get a Quote</a>
         </div>
-      </article>
+        <ul class="coop-features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Pallet-wood walls on a stringer frame
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Single nesting box with lift-up lid
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Wire mesh ventilation and front door
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Bolt latch to keep the foxes out
+          </li>
+        </ul>
+        <div class="coop-card-footer">
+          <p class="coop-price-label">From</p>
+          <p class="coop-price">€120</p>
+          <a href="https://wa.me/353000000000?text=Hi!%20I%27m%20interested%20in%20the%20Pallet%20Box%20(3ft%C3%973ft%2C%202%E2%80%933%20hens)."
+             target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </article>
 
-      <!-- Custom Build -->
-      <article class="coop-card reveal">
-        <div class="coop-photo coop-photo-4">
-          <span class="size-badge">Any Size</span>
-        </div>
-        <div class="coop-body">
-          <h2>Custom Build</h2>
-          <p>Got a bigger flock, an awkward space, or something specific in mind? We'll design and build something from whatever pallet wood and stringers we have to hand.</p>
-          <div class="coop-stats">
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>Your Size</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              <span>Any Flock</span>
-            </div>
-            <div class="coop-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>Fox-Proof</span>
-            </div>
+    <!-- The Stringer Run (Medium) -->
+    <article class="coop-card reveal" style="transition-delay:0.12s">
+      <div class="coop-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/7616aaac6_generated_image.png"
+             alt="The Stringer Run — medium coop" loading="lazy" />
+        <span class="coop-size-badge">Medium</span>
+        <span class="popular-badge">Most Popular</span>
+      </div>
+      <div class="coop-card-body">
+        <h2 class="coop-card-name">The Stringer Run</h2>
+        <p class="coop-card-desc">A coop-and-run combo built on a stringer frame with pallet-wood cladding. Plenty of room for a proper backyard flock to roam safely.</p>
+        <div class="coop-stats">
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2m-5-5 2-2m-2.5 9.5 2-2m5-5 2-2"/></svg>
+            <span>5ft × 3ft</span>
           </div>
-          <ul class="coop-features">
-            <li>Fully bespoke to your space and flock</li>
-            <li>Reclaimed pallet wood and stringers throughout</li>
-            <li>As many nesting boxes as you need</li>
-            <li>Price depends on size and available timber</li>
-          </ul>
-          <hr class="coop-divider" />
-          <p class="coop-from">PRICE</p>
-          <p class="coop-price">On Request</p>
-          <a href="index.html#contact" class="btn btn-green btn-full">Get a Quote</a>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>4–6 Hens</span>
+          </div>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            <span>With Run</span>
+          </div>
         </div>
-      </article>
+        <ul class="coop-features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Attached wire-mesh run on stringer frame
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Two nesting boxes with rear-access hatches
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Pallet-wood cladding, removable perch bar
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Heavy-duty bolt latches front and back
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Raised off the ground to keep it dry
+          </li>
+        </ul>
+        <div class="coop-card-footer">
+          <p class="coop-price-label">From</p>
+          <p class="coop-price">€220</p>
+          <a href="https://wa.me/353000000000?text=Hi!%20I%27m%20interested%20in%20the%20Stringer%20Run%20(5ft%C3%973ft%2C%204%E2%80%936%20hens)."
+             target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </article>
 
+    <!-- The A-Frame Tractor (Mobile) -->
+    <article class="coop-card reveal" style="transition-delay:0.24s">
+      <div class="coop-card-photo">
+        <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69ab754abaef45b9c391bbe7/524ed256e_generated_image.png"
+             alt="The A-Frame Tractor — mobile coop" loading="lazy" />
+        <span class="coop-size-badge">Mobile</span>
+      </div>
+      <div class="coop-card-body">
+        <h2 class="coop-card-name">The A-Frame Tractor</h2>
+        <p class="coop-card-desc">A lightweight A-frame tractor you can drag around the garden so your hens always have fresh grass. Simple pallet-wood construction with an open wire base.</p>
+        <div class="coop-stats">
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2m-5-5 2-2m-2.5 9.5 2-2m5-5 2-2"/></svg>
+            <span>4ft × 3ft</span>
+          </div>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>2–4 Hens</span>
+          </div>
+          <div class="coop-stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            <span>Movable</span>
+          </div>
+        </div>
+        <ul class="coop-features">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            A-frame design, light enough to move daily
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Open wire base gives access to fresh grass
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Sheltered sleeping box at the top end
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            Built from reclaimed pallet wood — no waste
+          </li>
+        </ul>
+        <div class="coop-card-footer">
+          <p class="coop-price-label">From</p>
+          <p class="coop-price">€150</p>
+          <a href="https://wa.me/353000000000?text=Hi!%20I%27m%20interested%20in%20the%20A-Frame%20Tractor%20(4ft%C3%973ft%2C%202%E2%80%934%20hens)."
+             target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- CUSTOM BUILD CTA -->
+  <div style="padding:0 24px 80px">
+    <div class="custom-cta-box reveal">
+      <h3>Need Something Different?</h3>
+      <p>Every yard is different. If you need a different size, shape, or layout — just ask. We'll make it happen from whatever timber we have to hand.</p>
+      <a href="https://wa.me/353000000000?text=Hi!%20I%27m%20interested%20in%20a%20custom%20coop%20build.%20Here%27s%20what%20I%27m%20looking%20for..."
+         target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Discuss a Custom Build
+      </a>
     </div>
-  </main>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
-      <p class="footer-logo"><span>Connemara</span> <em>Clucking</em> <span>Coops</span></p>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="index.html#story">Our Story</a>
-        <a href="breeds.html">Breeds</a>
-        <a href="coops.html">Shop Coops</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <p class="footer-copy">&copy; 2025 Connemara Clucking Coops &middot; Connemara, Co. Galway, Ireland</p>
+    <div class="footer-cols">
+      <div>
+        <p class="footer-logo-text">Connemara<br><em>Clucking</em> Coops</p>
+        <p class="footer-tagline">Heritage breeds &amp; handcrafted coops from the heart of the West of Ireland.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="breeds.html">Breed Library</a>
+        <a href="coops.html">Coop Shop</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--sage)"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Connemara, Co. Galway, Ireland</span>
+        </div>
+        <a href="https://wa.me/353000000000" target="_blank" rel="noopener noreferrer" class="footer-contact-item footer-wa-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
     </div>
+    <hr class="footer-divider" />
+    <p class="footer-copy">&copy; 2025 Connemara Clucking Coops. All rights reserved.</p>
   </footer>
 
   <script src="js/script.js"></script>

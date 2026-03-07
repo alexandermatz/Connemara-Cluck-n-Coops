@@ -1,6 +1,6 @@
-// ── Navbar scroll effect (home page only) ──────────────────────
+// ── Navbar scroll effect (transparent on hero, solid elsewhere) ─
 const navbar = document.getElementById('navbar');
-if (navbar && !navbar.classList.contains('navbar-solid')) {
+if (navbar && !navbar.classList.contains('scrolled')) {
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 40);
   }, { passive: true });
@@ -31,7 +31,6 @@ if (hamburger)  hamburger.addEventListener('click', openDrawer);
 if (navClose)   navClose.addEventListener('click', closeDrawer);
 if (navOverlay) navOverlay.addEventListener('click', closeDrawer);
 
-// Close drawer on Escape key
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && navDrawer && navDrawer.classList.contains('open')) {
     closeDrawer();
@@ -39,36 +38,18 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// Close drawer on link click
 navDrawer && navDrawer.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', closeDrawer)
 );
-
-// ── Contact form ───────────────────────────────────────────────
-const form        = document.getElementById('contact-form');
-const formSuccess = document.getElementById('form-success');
-
-if (form) {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    setTimeout(() => {
-      form.hidden = true;
-      formSuccess.hidden = false;
-    }, 1000);
-  });
-}
 
 // ── Scroll reveal ──────────────────────────────────────────────
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
+      entry.target.classList.add('visible');
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
