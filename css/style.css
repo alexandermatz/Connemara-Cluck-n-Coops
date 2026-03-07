@@ -787,6 +787,47 @@ address { font-style: normal; }
   margin-top: 20px;
 }
 
+/* ── Founder ──────────────────────────────────────────────────── */
+.founder {
+  padding: 80px 24px 96px;
+  background: var(--cream);
+  text-align: center;
+}
+.founder-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.founder-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 24px;
+  border: 3px solid var(--cream-dark);
+  background: var(--cream-dark);
+  display: block;
+}
+.founder-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+.founder-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+.founder-bio {
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
 /* ── Scroll-reveal ────────────────────────────────────────────── */
 .reveal {
   opacity: 0;
