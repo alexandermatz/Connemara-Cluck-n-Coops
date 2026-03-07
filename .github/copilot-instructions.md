@@ -1,10 +1,10 @@
-# Connemara Cluck-n-Coops – Copilot Instructions
+# Connemara-Cluck-n-Coops – Copilot Instructions
 
-This repository is for **Connemara Cluck-n-Coops**, a project related to chicken coop management and poultry keeping.
+This repository is for **Connemara-Cluck-n-Coops**, a project related to chicken coop management and poultry keeping.
 
 ## Project Overview
 
-Connemara Cluck-n-Coops is a project that helps manage chicken coops and poultry keeping. When contributing, focus on clarity, correctness, and maintainability.
+Connemara-Cluck-n-Coops is a project that helps manage chicken coops and poultry keeping. When contributing, focus on clarity, correctness, and maintainability.
 
 ## Code Standards
 
