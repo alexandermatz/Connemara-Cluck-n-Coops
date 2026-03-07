@@ -1,0 +1,86 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Large solid-timber chicken coop with corrugated metal roof, raised on legs with wooden access ramp">
+  <!-- Sky -->
+  <rect width="480" height="300" fill="#c4dbe8"/>
+  <!-- Ground -->
+  <rect x="0" y="246" width="480" height="54" fill="#6a8f47"/>
+  <rect x="0" y="242" width="480" height="7" fill="#7ea854"/>
+  <!-- Shadow -->
+  <ellipse cx="238" cy="249" rx="178" ry="7" fill="rgba(0,0,0,0.2)"/>
+
+  <!-- Back legs -->
+  <rect x="93" y="200" width="14" height="48" fill="#4a2c0c" rx="2"/>
+  <rect x="370" y="200" width="14" height="48" fill="#4a2c0c" rx="2"/>
+  <!-- Front legs -->
+  <rect x="74" y="197" width="17" height="51" fill="#6b3f16" rx="2"/>
+  <rect x="386" y="197" width="17" height="51" fill="#6b3f16" rx="2"/>
+
+  <!-- Body walls -->
+  <rect x="68" y="93" width="341" height="106" fill="#c27e28" rx="3"/>
+  <!-- Plank lines -->
+  <line x1="68" y1="108" x2="409" y2="108" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="122" x2="409" y2="122" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="136" x2="409" y2="136" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="150" x2="409" y2="150" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="164" x2="409" y2="164" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="178" x2="409" y2="178" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="68" y1="191" x2="409" y2="191" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Gable (front peak triangle) -->
+  <polygon points="238,38 68,93 409,93" fill="#c27e28"/>
+  <!-- Gable plank lines -->
+  <line x1="126" y1="80" x2="353" y2="80" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="156" y1="67" x2="323" y2="67" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+  <line x1="187" y1="54" x2="292" y2="54" stroke="#9a6118" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Roof left slope -->
+  <polygon points="238,24 44,95 68,95" fill="#2c2b2b"/>
+  <line x1="132" y1="74" x2="48" y2="94" stroke="#484848" stroke-width="3" opacity="0.4"/>
+  <line x1="160" y1="60" x2="46" y2="94" stroke="#484848" stroke-width="3" opacity="0.35"/>
+  <line x1="192" y1="46" x2="44" y2="95" stroke="#484848" stroke-width="3" opacity="0.3"/>
+  <!-- Roof right slope -->
+  <polygon points="238,24 432,95 409,95" fill="#262525"/>
+  <line x1="295" y1="62" x2="428" y2="94" stroke="#404040" stroke-width="3" opacity="0.35"/>
+  <line x1="330" y1="48" x2="430" y2="93" stroke="#404040" stroke-width="3" opacity="0.3"/>
+  <!-- Ridge cap -->
+  <line x1="42" y1="96" x2="238" y2="24" stroke="#1c1b1b" stroke-width="3.5"/>
+  <line x1="238" y1="24" x2="434" y2="96" stroke="#1c1b1b" stroke-width="3.5"/>
+
+  <!-- Arched door -->
+  <path d="M 314,199 L 314,142 Q 314,124 330,124 Q 346,124 346,142 L 346,199 Z" fill="#5c3210"/>
+  <path d="M 316,198 L 316,144 Q 316,128 330,128 Q 344,128 344,144 L 344,198" fill="none" stroke="#3d2008" stroke-width="1.5" opacity="0.7"/>
+  <!-- Hinges -->
+  <rect x="310" y="141" width="11" height="7" fill="#111" rx="1.5"/>
+  <circle cx="319" cy="144" r="2" fill="#2a2a2a"/>
+  <rect x="310" y="170" width="11" height="7" fill="#111" rx="1.5"/>
+  <circle cx="319" cy="173" r="2" fill="#2a2a2a"/>
+  <rect x="310" y="186" width="11" height="7" fill="#111" rx="1.5"/>
+  <!-- Bolt latch -->
+  <rect x="346" y="159" width="10" height="5" fill="#111" rx="1"/>
+
+  <!-- Ramp -->
+  <polygon points="312,199 348,199 372,248 288,248" fill="#8b5218"/>
+  <!-- Ramp cleats -->
+  <line x1="294" y1="239" x2="368" y2="233" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="297" y1="226" x2="366" y2="221" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="301" y1="213" x2="360" y2="208" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+  <line x1="305" y1="201" x2="350" y2="199" stroke="#6a3c10" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Vent window left -->
+  <rect x="86" y="110" width="64" height="28" fill="#5c3210" rx="3"/>
+  <line x1="86" y1="120" x2="150" y2="120" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="86" y1="129" x2="150" y2="129" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="107" y1="110" x2="107" y2="138" stroke="#3d2008" stroke-width="1" opacity="0.5"/>
+  <line x1="128" y1="110" x2="128" y2="138" stroke="#3d2008" stroke-width="1" opacity="0.5"/>
+
+  <!-- Vent window centre-left -->
+  <rect x="172" y="110" width="56" height="28" fill="#5c3210" rx="3"/>
+  <line x1="172" y1="120" x2="228" y2="120" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="172" y1="129" x2="228" y2="129" stroke="#3d2008" stroke-width="1.5"/>
+  <line x1="194" y1="110" x2="194" y2="138" stroke="#3d2008" stroke-width="1" opacity="0.5"/>
+
+  <!-- Nesting box access hatch on left wall -->
+  <rect x="86" y="156" width="110" height="36" fill="#5c3210" rx="3"/>
+  <line x1="141" y1="156" x2="141" y2="192" stroke="#3d2008" stroke-width="1.5"/>
+  <rect x="82" y="168" width="10" height="5" fill="#111" rx="1"/>
+  <rect x="195" y="168" width="10" height="5" fill="#111" rx="1"/>
+</svg>
