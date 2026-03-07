@@ -1,487 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connemara Cluck n Coops - Premium Chicken Coops from the West of Ireland</title>
-    <meta name="description" content="Handcrafted chicken coops from the heart of Connemara, Ireland. Built to last, designed for your flock.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connemara Clucking Coops – Heritage Breeds &amp; Handcrafted Coops</title>
+  <meta name="description" content="Heritage breeds &amp; handcrafted coops from the heart of the West of Ireland. Raising happy hens, one coop at a time." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">🐓</span>
-                <div class="logo-text">
-                    <span class="logo-name">Connemara</span>
-                    <span class="logo-tagline">Cluck n Coops</span>
-                </div>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#coops">Our Coops</a></li>
-                <li><a href="#features">Why Us</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#contact" class="btn-nav">Get in Touch</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-bold">Connemara</span>
+      <em class="nav-logo-italic"> Clucking </em>
+      <span class="nav-logo-bold">Coops</span>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+        <line x1="0" y1="1"  x2="22" y2="1"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="8"  x2="22" y2="8"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <button class="nav-close" id="nav-close" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <line x1="1" y1="1" x2="17" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="17" y1="1" x2="1"  y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a href="index.html#story">Our Story</a>
+      <a href="breeds.html">Breeds</a>
+      <a href="coops.html">Shop Coops</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">🌿 Handcrafted in Connemara, Ireland</span>
-                <h1>Premium Chicken Coops<br><span class="highlight">Built to Last</span></h1>
-                <p>From the wild beauty of Connemara's landscape, we craft sturdy, weatherproof chicken coops that keep your flock safe, happy, and healthy — season after season.</p>
-                <div class="hero-actions">
-                    <a href="#coops" class="btn btn-primary">Browse Our Coops</a>
-                    <a href="#contact" class="btn btn-secondary">Request a Quote</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <strong>200+</strong>
-                        <span>Happy Customers</span>
-                    </div>
-                    <div class="stat">
-                        <strong>15+</strong>
-                        <span>Years Experience</span>
-                    </div>
-                    <div class="stat">
-                        <strong>100%</strong>
-                        <span>Irish Made</span>
-                    </div>
-                </div>
-            </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-img" role="img" aria-label="Aerial view of a Connemara farm with free-range hens on green pastures"></div>
+    <div class="hero-content">
+      <p class="hero-location">Connemara, Ireland</p>
+      <h1 class="hero-title">Connemara<br><em>Clucking</em> Coops</h1>
+      <p class="hero-sub">Heritage breeds &amp; handcrafted coops from the heart of the West of Ireland. Raising happy hens, one coop at a time.</p>
+      <div class="hero-btns">
+        <a href="breeds.html" class="btn btn-white">Explore Breeds</a>
+        <a href="coops.html"  class="btn btn-white-outline">Shop Coops</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="story" id="story">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">Rooted in the Land</h2>
+    <p class="story-body">Nestled in the rugged beauty of Connemara, we're passionate about raising happy, healthy hens and crafting coops that are as beautiful as they are functional.</p>
+
+    <div class="pillars">
+      <div class="pillar reveal">
+        <!-- Leaf icon -->
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2C6 2 3 7 3 12c0 4 3 8 9 10 6-2 9-6 9-10 0-5-3-10-9-10z"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <path d="M12 2v20"/>
+        </svg>
+        <h3>Free Range Living</h3>
+        <p>Our hens enjoy the wild Connemara landscape, foraging freely on lush green pastures.</p>
+      </div>
+
+      <div class="pillar reveal">
+        <!-- Heart icon -->
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <h3>Heritage Breeds</h3>
+        <p>We raise only the finest heritage breeds, selected for temperament, egg quality, and hardiness.</p>
+      </div>
+
+      <div class="pillar reveal">
+        <!-- Shield icon -->
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h3>Handcrafted Coops</h3>
+        <p>Every coop is built by hand using reclaimed pallet wood and stringer frames, designed to last for years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title" style="text-align:left">We'd Love to Hear from You</h2>
+        <p>Whether you're after a hen or a coop, drop us a message and we'll get back to you as soon as we can.</p>
+        <address>
+          <p>Connemara, Co. Galway, Ireland</p>
+          <p><a href="mailto:hello@connemaracluckingcoops.ie">hello@connemaracluckingcoops.ie</a></p>
+        </address>
+      </div>
+      <div class="contact-form-wrap">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" required placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="f-interest">I'm interested in…</label>
+            <select id="f-interest" name="interest">
+              <option value="">— Choose one —</option>
+              <option>Heritage breeds / hens</option>
+              <option>The Pallet Box coop</option>
+              <option>The Stringer Run coop</option>
+              <option>The A-Frame Tractor</option>
+              <option>A custom coop build</option>
+              <option>Both hens &amp; a coop</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" required placeholder="Tell us a bit about what you're after…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-black btn-full">Send Message</button>
+        </form>
+        <div class="form-success" id="form-success" hidden>
+          <p class="success-tick">✓</p>
+          <h3>Message received!</h3>
+          <p>We'll be in touch soon.</p>
         </div>
-        <div class="hero-scroll">
-            <a href="#coops" aria-label="Scroll down">
-                <div class="scroll-indicator"></div>
-            </a>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Coops Section -->
-    <section class="coops" id="coops">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Our Range</span>
-                <h2>Find the Perfect Coop</h2>
-                <p>Every coop is handcrafted with premium Irish timber and built to withstand Connemara's famous Atlantic weather.</p>
-            </div>
-            <div class="coops-grid">
-                <div class="coop-card">
-                    <div class="coop-image coop-image-starter">
-                        <div class="coop-emoji">🏡</div>
-                        <span class="coop-badge">Popular</span>
-                    </div>
-                    <div class="coop-info">
-                        <h3>The Galway Starter</h3>
-                        <p>Perfect for small backyard flocks of 2–4 chickens. Compact, charming, and easy to maintain.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Fits 2–4 chickens</li>
-                            <li>📐 1.2m × 0.9m footprint</li>
-                            <li>🌧️ Weatherproof roof</li>
-                            <li>🔒 Secure latch system</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">From €380</span>
-                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">
+        <span>Connemara</span> <em>Clucking</em> <span>Coops</span>
+      </p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#story">Our Story</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="coops.html">Shop Coops</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Connemara Clucking Coops &middot; Connemara, Co. Galway, Ireland</p>
+    </div>
+  </footer>
 
-                <div class="coop-card featured">
-                    <div class="coop-image coop-image-family">
-                        <div class="coop-emoji">🏠</div>
-                        <span class="coop-badge coop-badge-featured">Best Value</span>
-                    </div>
-                    <div class="coop-info">
-                        <h3>The Connemara Family</h3>
-                        <p>Our most popular coop — spacious, robust, and designed for flocks of 6–10 chickens with room to roam.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Fits 6–10 chickens</li>
-                            <li>📐 2.4m × 1.8m footprint</li>
-                            <li>🌧️ Cedar-shingle roof</li>
-                            <li>🔒 Fox-proof wire mesh</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">From €750</span>
-                            <a href="#contact" class="btn btn-primary">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coop-card">
-                    <div class="coop-image coop-image-farmstead">
-                        <div class="coop-emoji">🏚️</div>
-                        <span class="coop-badge">Premium</span>
-                    </div>
-                    <div class="coop-info">
-                        <h3>The Farmstead Grande</h3>
-                        <p>For serious poultry keepers. This large-scale coop comfortably houses 15–25 chickens with all the amenities.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Fits 15–25 chickens</li>
-                            <li>📐 4.0m × 2.4m footprint</li>
-                            <li>🌧️ Metal roof option</li>
-                            <li>🔒 Heavy-duty hardware</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">From €1,400</span>
-                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coop-card">
-                    <div class="coop-image coop-image-tractor">
-                        <div class="coop-emoji">🚜</div>
-                        <span class="coop-badge">New</span>
-                    </div>
-                    <div class="coop-info">
-                        <h3>The Mobile Tractor</h3>
-                        <p>Move your flock around the garden with our easy-to-pull chicken tractor — great for pest control and fresh grass.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Fits 3–6 chickens</li>
-                            <li>📐 1.8m × 0.9m footprint</li>
-                            <li>🌧️ Lightweight framing</li>
-                            <li>🔒 Built-in carry handles</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">From €495</span>
-                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coop-card">
-                    <div class="coop-image coop-image-walkin">
-                        <div class="coop-emoji">🚪</div>
-                    </div>
-                    <div class="coop-info">
-                        <h3>The Walk-In Run</h3>
-                        <p>A large walk-in enclosure that can be paired with any of our coops to give your chickens the space they deserve.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Unlimited flock size</li>
-                            <li>📐 Custom sizing available</li>
-                            <li>🌧️ Optional cover</li>
-                            <li>🔒 Predator-proof design</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">From €320</span>
-                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coop-card coop-custom">
-                    <div class="coop-image coop-image-custom">
-                        <div class="coop-emoji">✏️</div>
-                    </div>
-                    <div class="coop-info">
-                        <h3>Custom Build</h3>
-                        <p>Have a unique space or special requirements? We'll design and build your dream coop to your exact specifications.</p>
-                        <ul class="coop-specs">
-                            <li>🐔 Any flock size</li>
-                            <li>📐 Any dimensions</li>
-                            <li>🎨 Custom paint & finish</li>
-                            <li>⚙️ Any accessories</li>
-                        </ul>
-                        <div class="coop-price">
-                            <span class="price">Price on request</span>
-                            <a href="#contact" class="btn btn-primary">Get a Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Why Choose Us</span>
-                <h2>Built the Connemara Way</h2>
-                <p>We take pride in every coop we build. Here's what makes our coops stand apart.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🌳</div>
-                    <h3>Sustainable Irish Timber</h3>
-                    <p>We source all our timber from certified sustainable Irish forests, ensuring durability and environmental responsibility.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌊</div>
-                    <h3>Atlantic-Weather Tested</h3>
-                    <p>Designed and built in Connemara — where Atlantic storms are a way of life. Our coops handle whatever the weather throws at them.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🦊</div>
-                    <h3>Predator-Proof Design</h3>
-                    <p>Our coops feature reinforced wire mesh, secure latches, and solid construction to keep foxes, mink, and other predators out.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Easy Maintenance</h3>
-                    <p>Designed for practical everyday use — easy to clean, ventilate, and access. Removable floor trays make cleaning a breeze.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Free Local Delivery</h3>
-                    <p>We deliver and install your coop anywhere in Connacht for free. Further afield? We'll arrange delivery at a reasonable cost.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>2-Year Guarantee</h3>
-                    <p>Every coop comes with a full 2-year guarantee on workmanship and materials. We stand behind our craftsmanship.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Gallery</span>
-                <h2>Our Coops in the Wild</h2>
-                <p>A peek at some of our favourite coops, settled into their new homes across Connaught and beyond.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-item-1">
-                    <div class="gallery-overlay">
-                        <span>The Connemara Family — Oughterard</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-2">
-                    <div class="gallery-overlay">
-                        <span>The Galway Starter — Clifden</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-3">
-                    <div class="gallery-overlay">
-                        <span>Custom Build — Westport</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-4">
-                    <div class="gallery-overlay">
-                        <span>The Farmstead Grande — Castlebar</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-5">
-                    <div class="gallery-overlay">
-                        <span>The Mobile Tractor — Ballinrobe</span>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-6">
-                    <div class="gallery-overlay">
-                        <span>Walk-In Run — Tuam</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Customer Reviews</span>
-                <h2>What Our Customers Say</h2>
-                <p>Don't just take our word for it — here's what the good people of the West of Ireland have to say.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Our Connemara Family coop has been standing strong through two winters now. The hens absolutely love it, and it's been so easy to clean. Couldn't be happier — worth every penny!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
-                        <div>
-                            <strong>Sinéad Mulryan</strong>
-                            <span>Oughterard, Co. Galway</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"I was skeptical about ordering a custom coop but the team were brilliant from start to finish. They really listened to what I needed and the result is absolutely stunning. My hens are the envy of the village!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">PD</div>
-                        <div>
-                            <strong>Pádraig Doherty</strong>
-                            <span>Clifden, Co. Galway</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"The delivery and installation service is fantastic. Two friendly lads arrived, had the coop set up in no time, and even helped us pick the best spot in the garden. Great local business — fully recommend!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MB</div>
-                        <div>
-                            <strong>Máire Burke</strong>
-                            <span>Westport, Co. Mayo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-badge">Get in Touch</span>
-                    <h2>Ready to House Your Flock?</h2>
-                    <p>Whether you know exactly what you want or you're just starting out, we'd love to have a chat. Drop us a message and we'll get back to you within 24 hours.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <div>
-                                <strong>Find Us</strong>
-                                <span>Letterfrack Road, Clifden,<br>Co. Galway, H71 X4K2</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <div>
-                                <strong>Call Us</strong>
-                                <span><a href="tel:+353953456789">+353 95 345 678</a></span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">✉️</span>
-                            <div>
-                                <strong>Email Us</strong>
-                                <span><a href="mailto:hello@connemaracluckncoops.ie">hello@connemaracluckncoops.ie</a></span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🕐</span>
-                            <div>
-                                <strong>Opening Hours</strong>
-                                <span>Mon–Fri: 9am–5pm<br>Sat: 10am–2pm</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="e.g. Séamus O'Brien">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required placeholder="your@email.com">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+353 xx xxx xxxx">
-                        </div>
-                        <div class="form-group">
-                            <label for="coop-type">Coop Type Interested In</label>
-                            <select id="coop-type" name="coop-type">
-                                <option value="">— Select a coop —</option>
-                                <option value="starter">The Galway Starter (2–4 hens)</option>
-                                <option value="family">The Connemara Family (6–10 hens)</option>
-                                <option value="farmstead">The Farmstead Grande (15–25 hens)</option>
-                                <option value="tractor">The Mobile Tractor</option>
-                                <option value="walkin">The Walk-In Run</option>
-                                <option value="custom">Custom Build</option>
-                                <option value="unsure">Not sure yet</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your needs — flock size, space available, any special requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message 🐓</button>
-                        <p class="form-note">We'll get back to you within 24 hours. No spam, ever.</p>
-                    </form>
-                    <div class="form-success" id="form-success">
-                        <div class="success-icon">🎉</div>
-                        <h3>Message Sent!</h3>
-                        <p>Thanks for reaching out! We'll be in touch within 24 hours.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">🐓</span>
-                        <div class="logo-text">
-                            <span class="logo-name">Connemara</span>
-                            <span class="logo-tagline">Cluck n Coops</span>
-                        </div>
-                    </a>
-                    <p>Handcrafted chicken coops from the heart of Connemara, Ireland. Built to last, designed for your flock.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook" class="social-link">f</a>
-                        <a href="#" aria-label="Instagram" class="social-link">ig</a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Our Coops</h4>
-                    <ul>
-                        <li><a href="#coops">The Galway Starter</a></li>
-                        <li><a href="#coops">The Connemara Family</a></li>
-                        <li><a href="#coops">The Farmstead Grande</a></li>
-                        <li><a href="#coops">The Mobile Tractor</a></li>
-                        <li><a href="#coops">Walk-In Runs</a></li>
-                        <li><a href="#coops">Custom Builds</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="#features">Why Choose Us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                        <li><a href="#contact">Delivery Areas</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <address>
-                        <p>Letterfrack Road, Clifden<br>Co. Galway, H71 X4K2</p>
-                        <p><a href="tel:+353953456789">+353 95 345 678</a></p>
-                        <p><a href="mailto:hello@connemaracluckncoops.ie">hello@connemaracluckncoops.ie</a></p>
-                    </address>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Connemara Cluck n Coops. All rights reserved.</p>
-                <p>Handcrafted with ❤️ in Connemara, Ireland</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
