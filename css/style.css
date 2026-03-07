@@ -345,16 +345,16 @@ address { font-style: normal; }
 
 /* ── Why Choose Us ────────────────────────────────────────────── */
 .why-us {
-  padding: 80px 24px 96px;
+  padding: 40px 24px 48px;
   background: var(--cream-dark);
   text-align: center;
 }
 .why-us-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 960px;
-  margin: 48px auto 0;
+  gap: 12px;
+  max-width: 800px;
+  margin: 28px auto 0;
   text-align: left;
 }
 @media (min-width: 600px) {
@@ -363,47 +363,29 @@ address { font-style: normal; }
 .why-us-item {
   background: var(--cream);
   border: 1px solid rgba(74,124,89,0.15);
-  border-radius: 16px;
-  padding: 28px 24px;
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
+  border-radius: 12px;
+  padding: 16px 18px;
   transition: box-shadow 0.3s, transform 0.3s;
 }
 .why-us-item:hover {
-  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
   transform: translateY(-2px);
-}
-.why-us-icon {
-  width: 46px;
-  height: 46px;
-  background: rgba(74,124,89,0.10);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.why-us-icon svg {
-  width: 22px;
-  height: 22px;
-  color: var(--green);
 }
 .why-us-text h3 {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--charcoal);
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 .why-us-text p {
-  font-size: 0.87rem;
+  font-size: 0.82rem;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 .why-us-more {
-  margin-top: 40px;
-  font-size: 0.92rem;
+  margin-top: 24px;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--muted);
 }
