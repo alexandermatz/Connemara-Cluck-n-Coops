@@ -1161,3 +1161,39 @@ address { font-style: normal; }
 }
 .gs-faq-item p a { color: var(--green); text-decoration: underline; }
 .gs-faq-item p a:hover { color: var(--green-dark); }
+
+/* ── Hatch Eggs page ──────────────────────────────────────────── */
+.hatch-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1080px;
+  margin: 56px auto 0;
+  padding: 0 24px 56px;
+}
+@media (min-width: 700px) {
+  .hatch-photos { grid-template-columns: 1fr 1fr; }
+}
+.hatch-photo {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.hatch-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 700px) {
+  .hatch-photo img { height: 380px; }
+}
+.hatch-photo figcaption {
+  background: #fff;
+  padding: 16px 20px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  border-top: 1px solid var(--cream-dark);
+}
