@@ -683,12 +683,18 @@ address { font-style: normal; }
 }
 .sidebar-card-body p:last-of-type { margin-bottom: 20px; }
 
-.sidebar-rooster-img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  border-radius: 10px;
+.rooster-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
   margin-bottom: 16px;
+}
+
+.rooster-gallery-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .btn-sidebar-quote {
