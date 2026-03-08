@@ -65,7 +65,7 @@ address { font-style: normal; }
 .nav-links {
   display: none;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 .nav-links a {
   font-size: 0.85rem;
